@@ -7,7 +7,7 @@ public class Distance {
 
     public Distance (double distanceInKm, boolean exact) {
         this.distanceInKm = distanceInKm;
-        this. exact = exact;
+        this.exact = exact;
     }
 
     public double getDistanceInKm() {
