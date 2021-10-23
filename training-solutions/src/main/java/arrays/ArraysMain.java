@@ -33,15 +33,19 @@ public class ArraysMain {
     }
 
     private int min(int firstNumber, int SecondNumber){
-        if (firstNumber>SecondNumber){
+        if (firstNumber<SecondNumber){
             return firstNumber;
         } else {
             return SecondNumber;
         }
     }
 
+    public boolean wonLottery(int[] chosenNumbers, int[] winningNumbers){
+        Arrays.sort(chosenNumbers);
+        Arrays.sort(winningNumbers);
 
-
+        return Arrays.equals(chosenNumbers,winningNumbers);
+    }
 
     public static void main(String[] args) {
 
@@ -55,6 +59,8 @@ public class ArraysMain {
 
         System.out.println(arraysMain.sameTempValuesDayLight(new double[]{12.2, 13.2, 14.2, 15.4, 18.5, 20},
                                                             new double[]{12.2, 13.2, 14.2, 15.4, 18.5}));
+
+        System.out.println(arraysMain.wonLottery(new int[]{1, 2, 3, 4, 5}, new int[]{1, 2, 3, 4, 6}));
     }
 
 }
