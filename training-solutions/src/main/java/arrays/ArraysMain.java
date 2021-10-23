@@ -21,19 +21,40 @@ public class ArraysMain {
     }
 
     public boolean sameTempValues(double[] day, double[] anotherDay){
-        double[] ArraysDay = Arrays.copyOfRange(day, 0, day.length);
-        double[] ArraysAnotherDay = Arrays.copyOfRange(anotherDay, 0, anotherDay.length);
+        return Arrays.equals(day,anotherDay);
+    }
+
+    public boolean sameTempValuesDayLight(double[] day, double[] anotherDay){
+        int min = min(day.length, anotherDay.length);
+
+        double[] ArraysDay = Arrays.copyOfRange(day, 0, min);
+        double[] ArraysAnotherDay = Arrays.copyOfRange(anotherDay, 0, min);
         return Arrays.equals(ArraysDay,ArraysAnotherDay);
     }
+
+    private int min(int firstNumber, int SecondNumber){
+        if (firstNumber>SecondNumber){
+            return firstNumber;
+        } else {
+            return SecondNumber;
+        }
+    }
+
+
+
 
     public static void main(String[] args) {
 
         ArraysMain arraysMain = new ArraysMain();
         System.out.println(arraysMain.numberOfDaysAsString());
+
         System.out.println(arraysMain.multiplicationTableAsString(4));
 
         System.out.println(arraysMain.sameTempValues(new double[]{12.2, 13.2, 14.2, 15.4, 18.5, 20},
                                                      new double[]{12.2, 13.4, 14.2, 15.4, 18.5, 20}));
+
+        System.out.println(arraysMain.sameTempValuesDayLight(new double[]{12.2, 13.2, 14.2, 15.4, 18.5, 20},
+                                                            new double[]{12.2, 13.2, 14.2, 15.4, 18.5}));
     }
 
 }
