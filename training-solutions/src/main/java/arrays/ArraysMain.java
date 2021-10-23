@@ -9,10 +9,23 @@ public class ArraysMain {
         return Arrays.toString(numberOfDays);
     }
 
+    public String multiplicationTableAsString(int size){
+        int[][] a= new int[size][size];
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                a[i][j] = (i + 1) * (j + 1);
+            }
+        }
+        return Arrays.deepToString(a);
+    }
+
     public static void main(String[] args) {
 
         ArraysMain arraysMain = new ArraysMain();
         System.out.println(arraysMain.numberOfDaysAsString());
+        System.out.println(arraysMain.multiplicationTableAsString(4));
+
     }
 
 }
