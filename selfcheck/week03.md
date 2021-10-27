@@ -15,14 +15,14 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 * [x] Bevezetés a metódusok használatába gyakorlati feladat
 * [x] [Referenciák videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709845-referenciak)
 * [x] Referenciák gyakorlati feladat
-* [ ] [Kompozíció videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28188876-kompozicio)
-* [ ] Kompozíció gyakorlati feladat
-* [ ] [Kompozíció listával videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28188892-kompozicio-listaval)
-* [ ] Kompozíció listával gyakorlati feladat
+* [x] [Kompozíció videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28188876-kompozicio)
+* [x] Kompozíció gyakorlati feladat
+* [x] [Kompozíció listával videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28188892-kompozicio-listaval)
+* [x] Kompozíció listával gyakorlati feladat
 
 ## Típusok és operátorok
 
-* [ ] [Literálok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709837-literalok)
+* [x] [Literálok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709837-literalok)
 * [ ] Literálok gyakorlati feladat
 * [ ] [Egyszerű típusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709846-egyszeru-tipusok)
 * [ ] Egyszerű típusok gyakorlati feladat
@@ -58,10 +58,10 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 
 ## Konzultációk
 
-* [ ] 2021-10-25 konzultáció részvétel/videó
-* [ ] 2021-10-25 konzultáció gyakorlati feladat
-* [ ] 2021-10-26 konzultáció részvétel/videó
-* [ ] 2021-10-26 konzultáció gyakorlati feladat
+* [x] 2021-10-25 konzultáció részvétel/videó
+* [x] 2021-10-25 konzultáció gyakorlati feladat
+* [x] 2021-10-26 konzultáció részvétel/videó
+* [x] 2021-10-26 konzultáció gyakorlati feladat
 * [ ] 2021-10-28 konzultáció részvétel/videó
 * [ ] 2021-10-28 konzultáció gyakorlati feladat
 * [ ] 2021-10-29 konzultáció részvétel/videó
