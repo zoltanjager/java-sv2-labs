@@ -23,12 +23,12 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 ## Típusok és operátorok
 
 * [x] [Literálok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709837-literalok)
-* [ ] Literálok gyakorlati feladat
-* [ ] [Egyszerű típusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709846-egyszeru-tipusok)
-* [ ] Egyszerű típusok gyakorlati feladat
-* [ ] [Karakter videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993708-karakter)
-* [ ] Karakter gyakorlati feladat
-* [ ] [Felsorolásos típus videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709804-felsorolasos-tipus)
+* [x] Literálok gyakorlati feladat
+* [x] [Egyszerű típusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709846-egyszeru-tipusok)
+* [x] Egyszerű típusok gyakorlati feladat
+* [x] [Karakter videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993708-karakter)
+* [x] Karakter gyakorlati feladat
+* [x] [Felsorolásos típus videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709804-felsorolasos-tipus)
 * [ ] Felsorolásos típus gyakorlati feladat
 * [ ] [Operátorok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709858-operatorok)
 * [ ] Operátorok gyakorlati feladat 
@@ -62,7 +62,7 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 * [x] 2021-10-25 konzultáció gyakorlati feladat
 * [x] 2021-10-26 konzultáció részvétel/videó
 * [x] 2021-10-26 konzultáció gyakorlati feladat
-* [ ] 2021-10-28 konzultáció részvétel/videó
-* [ ] 2021-10-28 konzultáció gyakorlati feladat
+* [x] 2021-10-28 konzultáció részvétel/videó
+* [x] 2021-10-28 konzultáció gyakorlati feladat
 * [ ] 2021-10-29 konzultáció részvétel/videó
 * [ ] 2021-10-29 konzultáció gyakorlati feladat
