@@ -1,4 +1,4 @@
-package enumtype.firstenum.enumtype.solarsystem;
+package enumtype.solarsystem;
 
 public class SolarSystemMain {
     public static void main(String[] args) {

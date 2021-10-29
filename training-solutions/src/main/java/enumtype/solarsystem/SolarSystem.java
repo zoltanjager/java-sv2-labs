@@ -1,4 +1,4 @@
-package enumtype.firstenum.enumtype.solarsystem;
+package enumtype.solarsystem;
 
 public enum SolarSystem {
     MARS(2), EARTH(1), VENUS(3);
