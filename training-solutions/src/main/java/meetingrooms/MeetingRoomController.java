@@ -4,6 +4,7 @@ public class MeetingRoomController {
     public static void main(String[] args) {
         Office office = new Office();
 
+
         office.addMeetingRoom(new MeetingRoom("aaa",5,4));
         office.addMeetingRoom(new MeetingRoom("bbb",6,4));
         office.addMeetingRoom(new MeetingRoom("ccc",7,4));
