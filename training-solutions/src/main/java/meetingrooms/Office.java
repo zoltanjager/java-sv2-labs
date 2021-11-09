@@ -12,77 +12,77 @@ public class Office {
     }
 
     public String printNames() {
-        String namesOfMeetingRooms;
         StringBuilder sb = new StringBuilder();
         for (MeetingRoom meetingRoom: meetingRooms) {
             sb.append(meetingRoom.getName());
             sb.append("\n");
         }
-        return namesOfMeetingRooms = sb.toString();
+        return sb.toString();
     }
 
     public String printNamesReverse() {
-        String namesOfMeetingRooms;
         StringBuilder sb = new StringBuilder();
         for (int i = meetingRooms.size()-1; i >= 0; i--) {
             sb.append(meetingRooms.get(i).getName());
             sb.append("\n");
         }
-        return namesOfMeetingRooms = sb.toString();
+        return sb.toString();
     }
 
     public String printEvenNames() {
-        String namesOfMeetingRooms;
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i < meetingRooms.size(); i = i + 2) {
             sb.append(meetingRooms.get(i).getName());
             sb.append("\n");
         }
-        return namesOfMeetingRooms = sb.toString();
+        return sb.toString();
     }
 
     public String printAreas() {
-        String allInfoAboutMeetingRooms;
         StringBuilder sb = new StringBuilder();
         for (MeetingRoom meetingRoom: meetingRooms) {
-            sb.append(meetingRoom.getName() + " - ");
-            sb.append(meetingRoom.getWidth() + " - ");
-            sb.append(meetingRoom.getLength() + " - ");
-            sb.append(meetingRoom.getArea());
-            sb.append("\n");
+            sb.append(getMeetingRoomDatas(meetingRoom));
         }
-        return allInfoAboutMeetingRooms = sb.toString();
+        return sb.toString();
     }
 
-    public String printMeetingRoomsWithName(String name){
-        String infoAboutFoundMeetingRoom = null;
-
+    public String printMeetingRoomsWithName(String name) {
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < meetingRooms.size(); i++) {
-            int indexOfFoundMeetingRoom = meetingRooms.get(i).getName().indexOf(name);
-            if (indexOfFoundMeetingRoom > -1) {
-                infoAboutFoundMeetingRoom = meetingRooms.get(indexOfFoundMeetingRoom).getName() + " - ";
-                infoAboutFoundMeetingRoom += meetingRooms.get(indexOfFoundMeetingRoom).getWidth() + " - ";
-                infoAboutFoundMeetingRoom += meetingRooms.get(indexOfFoundMeetingRoom).getLength() + " - ";
-                infoAboutFoundMeetingRoom += meetingRooms.get(indexOfFoundMeetingRoom).getArea();
+            if (meetingRooms.get(i).getName().equalsIgnoreCase(name)) {
+                sb.append(getMeetingRoomDatas(meetingRooms.get(i)));
             }
         }
-        return infoAboutFoundMeetingRoom;
+        return sb.toString();
     }
 
     public String printMeetingRoomsContains(String part) {
-        String infoAboutMeetingRooms;
         StringBuilder sb = new StringBuilder();
         for (MeetingRoom meetingRoom: meetingRooms) {
             if (meetingRoom.getName().toLowerCase().contains(part.toLowerCase())){
-                sb.append(meetingRoom.getName() + " - ");
-                sb.append(meetingRoom.getWidth() + " - ");
-                sb.append(meetingRoom.getLength() + " - ");
-                sb.append(meetingRoom.getArea());
-                sb.append("\n");
+                sb.append(getMeetingRoomDatas(meetingRoom));
             }
         }
-        return infoAboutMeetingRooms = sb.toString();
+        return sb.toString();
     }
 
+    public String printAreasLargerThan(int area) {
+        StringBuilder sb = new StringBuilder();
+        for (MeetingRoom meetingRoom: meetingRooms) {
+            if (meetingRoom.getArea() >= area) {
+                sb.append(getMeetingRoomDatas(meetingRoom));
+            }
+        }
+        return sb.toString();
+    }
 
+    private String getMeetingRoomDatas(MeetingRoom meetingRoom) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(meetingRoom.getName() + " - ");
+        sb.append(meetingRoom.getWidth() + " - ");
+        sb.append(meetingRoom.getLength() + " - ");
+        sb.append(meetingRoom.getArea());
+        sb.append("\n");
+        return sb.toString();
+    }
 }
