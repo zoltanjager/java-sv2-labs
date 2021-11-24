@@ -24,12 +24,12 @@ class SalesTest {
     }
 
     @Test
-    void selectSalesPersonWithFurthestAboveTarget() {
+    void testSelectSalesPersonWithFurthestAboveTarget() {
         assertEquals(salesPersons.get(1), sales.selectSalesPersonWithFurthestAboveTarget(salesPersons));
     }
 
     @Test
-    void selectSalesPersonWithFurthestBelowTarget() {
+    void testSelectSalesPersonWithFurthestBelowTarget() {
         assertEquals(salesPersons.get(3), sales.selectSalesPersonWithFurthestBelowTarget(salesPersons));
     }
 }
