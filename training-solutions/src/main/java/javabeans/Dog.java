@@ -4,7 +4,7 @@ public class Dog {
     private String name;
     private int age;
     private boolean pedigree;
-    private float weight;
+    private double weight;
 
     public void setName(String name) {
         this.name = name;
@@ -18,7 +18,7 @@ public class Dog {
         this.pedigree = pedigree;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
@@ -34,7 +34,7 @@ public class Dog {
         return pedigree;
     }
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 }
