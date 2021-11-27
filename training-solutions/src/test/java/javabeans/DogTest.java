@@ -15,21 +15,21 @@ class DogTest {
     }
 
     @Test
-    void setAge() {
+    void testSetAge() {
         Dog dog = new Dog();
         dog.setAge(8);
         assertEquals(8, dog.getAge());
     }
 
     @Test
-    void setPedigree() {
+    void testSetPedigree() {
         Dog dog = new Dog();
         dog.setPedigree(false);
         assertFalse(dog.isPedigree());
     }
 
     @Test
-    void setWeight() {
+    void testSetWeight() {
         Dog dog = new Dog();
         dog.setWeight(6);
         assertEquals(6, dog.getWeight());
