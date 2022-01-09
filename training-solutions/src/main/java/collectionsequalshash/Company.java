@@ -1,5 +1,6 @@
 package collectionsequalshash;
 
+
 import java.util.Objects;
 
 public class Company {
@@ -24,7 +25,7 @@ public class Company {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Company company = (Company) o;
-        return taxNumber == company.taxNumber && name.equals(company.name);
+        return name.equals(company.name) && taxNumber.equals(company.taxNumber);
     }
 
     @Override
