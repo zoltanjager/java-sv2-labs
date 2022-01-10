@@ -10,32 +10,32 @@ public class Paper {
         return new HashMap<>(paper);
     }
 
-    public void putFurtherPaper(String className, int kilogramms){
-        if(!paper.containsKey(className)){
-            paper.put(className,0);
+    public void putFurtherPaper(String className, int kilogramms) {
+        if (!paper.containsKey(className)) {
+            paper.put(className, 0);
         }
-        paper.put(className, paper.get(className)+kilogramms);
+        paper.put(className, paper.get(className) + kilogramms);
     }
 
-    public String getWinnerClass(){
+    public String getWinnerClass() {
         int max = Integer.MIN_VALUE;
-        for (Integer actual: paper.values()) {
-            if ( actual > max){
-                max=actual;
+        for (Integer actual : paper.values()) {
+            if (actual > max) {
+                max = actual;
             }
         }
-        String result="";
-        for (Map.Entry entry : paper.entrySet()){
-            if(max==(Integer)entry.getValue()){
-                result= entry.getKey().toString();
+        String result = "";
+        for (Map.Entry entry : paper.entrySet()) {
+            if (max == (Integer) entry.getValue()) {
+                result = entry.getKey().toString();
             }
         }
         return result;
     }
 
-    public int getTotalWeight(){
+    public int getTotalWeight() {
         int sum = 0;
-        for (int actual: paper.values()) {
+        for (int actual : paper.values()) {
             sum += actual;
         }
         return sum;
