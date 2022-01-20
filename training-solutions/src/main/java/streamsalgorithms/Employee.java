@@ -104,7 +104,7 @@ public class Employee {
 
 
         List<String> nameOfEmployeesBirthBefore1990 = employees.stream()
-                .filter(e-> e.getYearOfBirth()<1990)
+                .filter(e -> e.getYearOfBirth() < 1990)
                 .map(Employee::getName)
                 .collect(Collectors.toList());
 
