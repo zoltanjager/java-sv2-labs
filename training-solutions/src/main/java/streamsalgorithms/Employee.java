@@ -72,12 +72,13 @@ public class Employee {
 
 
         String nameOfEmployeesBirthYearEarlier = employees.stream()
-                .sorted(new Comparator<Employee>() {
-                    @Override
-                    public int compare(Employee o1, Employee o2) {
-                        return o1.getYearOfBirth() - o2.getYearOfBirth();
-                    }
-                })
+                .sorted((e1, e2) -> e1.getYearOfBirth() - e2.getYearOfBirth())
+ //               .sorted(new Comparator<Employee>() {
+ //                   @Override
+ //                   public int compare(Employee o1, Employee o2) {
+ //                       return o1.getYearOfBirth() - o2.getYearOfBirth();
+ //                   }
+ //               })
                 .map(Employee::getName)
                 .findFirst().orElseThrow(() -> new IllegalArgumentException("Empty"));
 
