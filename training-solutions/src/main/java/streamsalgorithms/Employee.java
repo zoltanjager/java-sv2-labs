@@ -72,7 +72,8 @@ public class Employee {
 
 
         String nameOfEmployeesBirthYearEarlier = employees.stream()
-                .sorted((e1, e2) -> e1.getYearOfBirth() - e2.getYearOfBirth())
+                .sorted(Comparator.comparingInt(Employee::getYearOfBirth))
+                // .sorted((e1, e2) -> e1.getYearOfBirth() - e2.getYearOfBirth())
  //               .sorted(new Comparator<Employee>() {
  //                   @Override
  //                   public int compare(Employee o1, Employee o2) {
