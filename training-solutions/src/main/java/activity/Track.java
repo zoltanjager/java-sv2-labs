@@ -16,7 +16,6 @@ public class Track {
     public void loadFromGpx(Path path) {
 
         try (BufferedReader br = Files.newBufferedReader(path)) {
-
             String line;
 
             while ((line = br.readLine()) != null) {
