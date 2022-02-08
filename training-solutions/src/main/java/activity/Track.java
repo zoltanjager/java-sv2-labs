@@ -61,8 +61,6 @@ public class Track {
             fullDecrease += Math.min(elevations[i] - elevations[i - 1], 0);
         }
         return Math.abs(fullDecrease);
-
-
     }
 
     public Coordinate findMinimumCoordinate() {
