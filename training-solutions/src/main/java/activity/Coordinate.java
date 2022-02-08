@@ -23,7 +23,6 @@ final class Coordinate {
             return true;
         }
         throw new IllegalArgumentException("Wrong data");
-
     }
 
 

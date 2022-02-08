@@ -35,7 +35,6 @@ public class Activities {
                     .filter(activity -> activity.getType().equals(actual))
                     .mapToDouble(Activity::getDistance)
                     .sum();
-
             result.add(new Report(actual, sum));
         }
         return result;

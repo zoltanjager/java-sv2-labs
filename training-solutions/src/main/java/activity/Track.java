@@ -94,8 +94,6 @@ public class Track {
                 .getAsDouble();
 
         return new Coordinate(lat, lon);
-
-
     }
 
     public double getRectangleArea() {
@@ -135,6 +133,4 @@ public class Track {
     private boolean isTrackPoint(String line) {
         return line.contains("<ele");
     }
-
-
 }

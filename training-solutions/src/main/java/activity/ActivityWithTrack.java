@@ -12,7 +12,6 @@ public class ActivityWithTrack implements Activity {
 
     @Override
     public double getDistance() {
-
         return track.getDistance();
     }
 

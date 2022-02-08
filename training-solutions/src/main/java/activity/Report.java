@@ -16,5 +16,4 @@ final class Report {
     public double getDistance() {
         return distance;
     }
-
 }
