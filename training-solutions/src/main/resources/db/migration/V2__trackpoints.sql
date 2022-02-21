@@ -1,0 +1,1 @@
+create table track_point(id int, tp_time date, lat double(9,7), lon double(10,7), foreign key (id) references activities(id));
